@@ -51,7 +51,6 @@ interface gigabitEthernet0/1
 ip address 192.168.2.1 255.255.255.0
 no shutdown
 exit
-
 ### Lab Summary
 Network 1: 192.168.1.0/24
 Network 2: 192.168.2.0/24
