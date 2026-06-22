@@ -77,8 +77,11 @@ Default Gateway: 192.168.2.1
 Connectivity Test:
 ping 192.168.2.10
 
-Result:
-✅ 4 packets sent
-✅ 4 packets received
-✅ 0% packet loss
-✅ PCs on different networks can communicate through the router.
+### Result
+✅ 4 packets sent  
+
+✅ 4 packets received  
+
+✅ 0% packet loss  
+
+✅ PCs on different networks can communicate through the router because the router forwards traffic between the two subnets.
