@@ -43,17 +43,31 @@ I am learning networking, Linux, AWS, GitHub, and Cloud Architecture.
 ### Router Commands
 enable
 configure terminal
+
 interface gigabitEthernet0/0
 ip address 192.168.1.1 255.255.255.0
 no shutdown
 exit
+
 interface gigabitEthernet0/1
 ip address 192.168.2.1 255.255.255.0
 no shutdown
 exit
+
+do show ip interface brief
+
 ### Lab Summary
 Network 1: 192.168.1.0/24
 Network 2: 192.168.2.0/24
 
 Result:
 ✅ PCs on different networks can communicate through the router.
+PC1: 192.168.1.10/24
+Default Gateway: 192.168.1.1
+
+PC2: 192.168.2.10/24
+Default Gateway: 192.168.2.1
+
+Connectivity Test:
+ping 192.168.2.10
+Result: 4 packets sent, 4 received, 0% loss.
