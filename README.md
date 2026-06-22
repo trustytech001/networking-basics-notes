@@ -61,13 +61,24 @@ Network 1: 192.168.1.0/24
 Network 2: 192.168.2.0/24
 
 Result:
-✅ PCs on different networks can communicate through the router.
-PC1: 192.168.1.10/24
+✅ PCs on different networks can communicate through the router,because the router forwards traffic between the two subnets.
+
+Network 1: 192.168.1.0/24
+Network 2: 192.168.2.0/24
+
+PC1:
+IP Address: 192.168.1.10/24
 Default Gateway: 192.168.1.1
 
-PC2: 192.168.2.10/24
+PC2:
+IP Address: 192.168.2.10/24
 Default Gateway: 192.168.2.1
 
 Connectivity Test:
 ping 192.168.2.10
-Result: 4 packets sent, 4 received, 0% loss.
+
+Result:
+✅ 4 packets sent
+✅ 4 packets received
+✅ 0% packet loss
+✅ PCs on different networks can communicate through the router.
