@@ -30,3 +30,24 @@ I am learning networking, Linux, AWS, GitHub, and Cloud Architecture.
 - Devices on the same subnet can communicate through a switch.
 - `ping` is used to test network connectivity.
 - Correct IP addressing is necessary for communication.
+
+## Day 2 – Router Configuration
+
+### What I learned
+- How to connect a router to two networks.
+- How to assign IP addresses to router interfaces.
+- How to enable interfaces using `no shutdown`.
+- How to configure default gateways on PCs.
+- How to test connectivity using `ping`.
+
+### Router Commands
+enable
+configure terminal
+interface gigabitEthernet0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+interface gigabitEthernet0/1
+ip address 192.168.2.1 255.255.255.0
+no shutdown
+exit
