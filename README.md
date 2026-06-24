@@ -122,3 +122,28 @@ as a DHCP server for the
 192.168.10.0/24 network, and all 
 devices received IP addresses 
 automatically.
+
+# DAY 4: DNS CONFIGURATION AND NAME RESOLUTION
+
+## Network Information
+- Router IP Address: 192.168.10.1
+- DNS Server IP Address: 192.168.10.2
+- Network Address: 192.168.10.0/24
+
+## DNS Record
+- Domain Name: www.networklab.com
+- IP Address: 192.168.10.10
+
+## Verification Commands
+```text
+ping 192.168.10.1
+ping www.networklab.com
+nslookup www.networklab.com
+
+# Result
+All devices successfully communicated
+on the network. The DNS server
+resolved the domain name
+www.networklab.com to 192.168.10.10,
+confirming that DNS configuration and
+name resolution are working correctly.
