@@ -94,9 +94,9 @@ Network Address: 192.168.10.0/24
 
 # DHCP Assignments
 - PC0: 192.168.10.10
-- 
+  
 - PC1: 192.168.10.11
-- 
+  
 - PC2: 192.168.10.12
 
 # Verification Commands
