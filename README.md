@@ -2,7 +2,8 @@
 My notes while learning networking and cloud computing.
 # Networking Basics Notes
 
-## Day 1
+# DAY 1
+## SECTIONS 
 
 ### What is a Network?
 A network is a group of devices connected together to share information.
@@ -31,7 +32,8 @@ I am learning networking, Linux, AWS, GitHub, and Cloud Architecture.
 - `ping` is used to test network connectivity.
 - Correct IP addressing is necessary for communication.
 
-## Day 2 – Router Configuration
+# DAY 2 – Router Configuration
+## SECTIONS
 
 ### What I learned
 - How to connect a router to two networks.
@@ -60,7 +62,7 @@ do show ip interface brief
 Network 1: 192.168.1.0/24
 Network 2: 192.168.2.0/24
 
-Result:
+## Result:
 ✅ PCs on different networks can communicate through the router,because the router forwards traffic between the two subnets.
 
 Network 1: 192.168.1.0/24
@@ -86,27 +88,28 @@ ping 192.168.2.10
 
 ✅ PCs on different networks can communicate through the router because the router forwards traffic between the two subnets.
 
-### DAY 3: ROUTER CONFIGURATION AND DHCP SETUP
+# DAY 3: ROUTER CONFIGURATION AND DHCP SETUP
+## SECTIONS 
 
-# Router Information
+## Router Information
 Router IP Address: 192.168.10.1
 Network Address: 192.168.10.0/24
 
-# DHCP Assignments
+## DHCP Assignments
 - PC0: 192.168.10.10
   
 - PC1: 192.168.10.11
   
 - PC2: 192.168.10.12
 
-# Verification Commands
+## Verification Commands
 ```text
 Router# show ip dhcp binding
 
 Router# show ip interface brief
 ```
 
-# Result
+## Result
 All PCs successfully obtained IP 
 addresses automatically from the 
 router's DHCP server and communicated 
@@ -116,7 +119,7 @@ was up with IP address 192.168.10.1,
 confirming successful DHCP 
 configuration.
 
-# Conclusion
+## Conclusion
 The router was successfully configured 
 as a DHCP server for the 
 192.168.10.0/24 network, and all 
@@ -124,6 +127,7 @@ devices received IP addresses
 automatically.
 
 # DAY 4: DNS CONFIGURATION AND NAME RESOLUTION
+## SECTIONS
 
 ## Network Information
 - Router IP Address: 192.168.10.1
@@ -135,12 +139,12 @@ automatically.
 - IP Address: 192.168.10.10
 
 ## Verification Commands
-```text
+```text```
 ping 192.168.10.1
 ping www.networklab.com
 nslookup www.networklab.com
 
-# ✅ RESULT
+## ✅ RESULT
 
 
 All devices successfully communicated
@@ -150,3 +154,37 @@ successfully resolved the domain name
 `192.168.10.10`, confirming that DNS
 configuration and name resolution are
 working correctly.
+
+# DAY 5: INTER-NETWORK COMMUNICATION TESTING USING STATIC ROUTING
+## SECTIONS
+
+# Objective 
+
+To verify that devices on different 
+networks can communicate successfully 
+after configuring static routes.
+
+# Activities Performed
+
+Verified router interfaces were up.
+Tested connectivity between routers 
+using the ping command.
+Tested communication between PCs on 
+different networks.
+Confirmed that static routing was 
+functioning correctly.
+
+# Results
+✓ Ping to 192.168.1.1 successful.
+✓ Ping to 10.0.0.2 successful.
+✓ Ping to 192.168.2.1 successful.
+✓ Ping to 192.168.2.2 successful.
+✓ End-to-end communication between both networks was achieved.
+
+# Conclusion
+
+The network was successfully
+configured, and devices on different 
+subnets were able to communicate 
+through the routers using static 
+routing.
