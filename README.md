@@ -175,10 +175,15 @@ Confirmed that static routing was
 functioning correctly.
 
 # Results
+
 ✓ Ping to 192.168.1.1 successful.
+
 ✓ Ping to 10.0.0.2 successful.
+
 ✓ Ping to 192.168.2.1 successful.
+
 ✓ Ping to 192.168.2.2 successful.
+
 ✓ End-to-end communication between both networks was achieved.
 
 # Conclusion
