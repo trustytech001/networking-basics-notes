@@ -93,13 +93,18 @@ Router IP Address: 192.168.10.1
 Network Address: 192.168.10.0/24
 
 # DHCP Assignments
-PC0: 192.168.10.10
-PC1: 192.168.10.11
-PC2: 192.168.10.12
+- PC0: 192.168.10.10
+- 
+- PC1: 192.168.10.11
+- 
+- PC2: 192.168.10.12
 
 # Verification Commands
+```text
 Router# show ip dhcp binding
+
 Router# show ip interface brief
+```
 
 # Result
 All PCs successfully obtained IP addresses automatically from the router's DHCP server.
