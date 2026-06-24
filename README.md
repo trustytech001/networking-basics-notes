@@ -107,6 +107,18 @@ Router# show ip interface brief
 ```
 
 # Result
-All PCs successfully obtained IP addresses automatically from the router's DHCP server.
-All PCs can communicate with each other on the network.
-The router interface GigabitEthernet0/0 is up with IP address 192.168.10.1, confirming proper DHCP and network configuration.
+All PCs successfully obtained IP 
+addresses automatically from the 
+router's DHCP server and communicated 
+successfully on the network. The 
+router interface GigabitEthernet0/0 
+was up with IP address 192.168.10.1, 
+confirming successful DHCP 
+configuration.
+
+# Conclusion
+The router was successfully configured 
+as a DHCP server for the 
+192.168.10.0/24 network, and all 
+devices received IP addresses 
+automatically.
