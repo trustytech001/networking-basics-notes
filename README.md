@@ -88,17 +88,20 @@ ping 192.168.2.10
 
 ### DAY 3: ROUTER CONFIGURATION AND DHCP SETUP
 
+# Router Information
 Router IP Address: 192.168.10.1
 Network Address: 192.168.10.0/24
-DHCP Assignments
+
+# DHCP Assignments
 PC0: 192.168.10.10
 PC1: 192.168.10.11
 PC2: 192.168.10.12
-Verification Commands
-Plain text
+
+# Verification Commands
 Router# show ip dhcp binding
 Router# show ip interface brief
-Result
-Plain text
-All PCs successfully obtained IP addresses automatically from the router's DHCP server and can communicate with each other on the network.
+
+# Result
+All PCs successfully obtained IP addresses automatically from the router's DHCP server.
+All PCs can communicate with each other on the network.
 The router interface GigabitEthernet0/0 is up with IP address 192.168.10.1, confirming proper DHCP and network configuration.
