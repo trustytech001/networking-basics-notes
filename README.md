@@ -140,10 +140,13 @@ ping 192.168.10.1
 ping www.networklab.com
 nslookup www.networklab.com
 
-# Result
+# ✅ RESULT
+
+
 All devices successfully communicated
 on the network. The DNS server
-resolved the domain name
-www.networklab.com to 192.168.10.10,
-confirming that DNS configuration and
-name resolution are working correctly.
+successfully resolved the domain name
+`www.networklab.com` to
+`192.168.10.10`, confirming that DNS
+configuration and name resolution are
+working correctly.
