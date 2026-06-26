@@ -218,3 +218,23 @@ PC3: 192.168.20.3/24
 ## Conclusion
 Devices in the same VLAN can communicate.
 Devices in different VLANs need a router or Layer 3 switch to communicate.
+
+VLAN 10 Network: 192.168.10.0/24
+
+Gateway: 192.168.10.1
+
+VLAN 20 Network: 192.168.20.0/24
+
+Gateway: 192.168.20.1
+
+Router-on-a-Stick allows one physical router interface to route traffic between multiple VLANs using subinterfaces and 802.1Q encapsulation.
+
+✅ VLANs created successfully
+
+✅ Trunk configured successfully
+
+✅ Router subinterfaces configured successfully
+
+✅ PCs can communicate within and across VLANs
+
+✅ Inter-VLAN routing is working
