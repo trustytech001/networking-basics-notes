@@ -193,3 +193,28 @@ configured, and devices on different
 subnets were able to communicate 
 through the routers using static 
 routing.
+
+# Day 6 – Switch Configuration and VLANs
+
+## VLAN Configuration
+VLAN 10 → Fa0/1, Fa0/2
+
+VLAN 20 → Fa0/3, Fa0/4
+
+## IP Addresses
+PC0: 192.168.10.2/24
+
+PC1: 192.168.10.3/24
+
+PC2: 192.168.20.2/24
+
+PC3: 192.168.20.3/24
+
+## Ping Results
+✅ PC0 → PC1 = Success
+
+❌ PC0 → PC2 = Failed
+
+## Conclusion
+Devices in the same VLAN can communicate.
+Devices in different VLANs need a router or Layer 3 switch to communicate.
