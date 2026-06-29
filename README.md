@@ -278,3 +278,30 @@ dns-server 8.8.8.8
 ✅ Ping test successful.
 
 ✅ 0% packet loss.
+
+
+# Day 8 - Static Routing
+
+Router0
+Interface G0/0: 192.168.1.1/24
+
+Interface G0/1: 10.0.0.1/30
+
+ip route 192.168.2.0 255.255.255.0 10.0.0.2
+
+Router1
+Interface G0/0: 192.168.2.1/24
+
+Interface G0/2: 10.0.0.2/30
+
+ip route 192.168.1.0 255.255.255.0 10.0.0.1
+
+Test:
+ping 192.168.2.10
+
+Result:
+✅ 4 packets sent
+
+✅ 4 packets received
+
+✅ 0% packet loss
