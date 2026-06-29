@@ -238,3 +238,40 @@ Router-on-a-Stick allows one physical router interface to route traffic between 
 ✅ PCs can communicate within and across VLANs
 
 ✅ Inter-VLAN routing is working
+
+# Day 7 - DHCP and Dynamic IP Addressing
+
+DHCP = Dynamic Host Configuration Protocol.
+
+DHCP automatically assigns:
+- IP Address
+  
+- Subnet Mask
+  
+- Default Gateway
+  
+- DNS Server
+
+DORA Process:
+1. Discover
+2. Offer
+3. Request
+4. Acknowledge
+
+Router Configuration:
+
+interface gig0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+
+ip dhcp excluded-address 192.168.1.1 192.168.1.10
+
+ip dhcp pool LAN
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.1
+dns-server 8.8.8.8
+
+✅ DHCP configured successfully.
+✅ PC0 and PC1 obtained IP addresses automatically.
+✅ Ping test successful.
+✅ 0% packet loss.
