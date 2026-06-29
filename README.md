@@ -300,6 +300,7 @@ Test:
 ping 192.168.2.10
 
 Result:
+
 ✅ 4 packets sent
 
 ✅ 4 packets received
