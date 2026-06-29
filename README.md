@@ -272,6 +272,9 @@ default-router 192.168.1.1
 dns-server 8.8.8.8
 
 ✅ DHCP configured successfully.
+
 ✅ PC0 and PC1 obtained IP addresses automatically.
+
 ✅ Ping test successful.
+
 ✅ 0% packet loss.
