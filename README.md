@@ -407,3 +407,38 @@ Dynamic Routing (RIP v2)
   End-to-end connectivity
 
   # Status ✅
+
+## Day 10 – IP Addressing and Network Connectivity
+
+# Objective
+
+To configure IP addresses on network devices and verify successful communication between hosts in a simulated network environment.
+
+# What I Learned
+
+- Configuring static IP addresses
+- Assigning subnet masks
+- Understanding the role of the default gateway
+- Verifying network settings using "ipconfig"
+- Testing connectivity using "ping"
+- Troubleshooting basic network connectivity issues
+
+Configuration Completed
+
+- Assigned IP addresses to end devices
+- Configured the correct subnet mask
+- Verified IP configurations
+- Tested communication between devices
+- Confirmed successful end-to-end connectivity
+
+# Result
+
+Successfully configured the network and verified communication between devices. All connectivity tests completed successfully with no packet loss.
+
+# Skills Gained
+
+- IP Address Configuration
+- TCP/IP Fundamentals
+- Network Connectivity Testing
+- Basic Network Troubleshooting
+- Command-Line Networking Tools
