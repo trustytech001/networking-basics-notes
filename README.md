@@ -306,3 +306,104 @@ Result:
 ✅ 4 packets received
 
 ✅ 0% packet loss
+
+## Day 9 – Dynamic Routing with RIP (Cisco Packet Tracer)
+# Objective
+
+Configured Dynamic Routing using Routing Information Protocol (RIP Version 2) to enable communication between two different LANs through two routers.
+Network Topology
+PC0 → Switch0 → Router0
+Router0 ↔ Router1
+Router1 → Switch1 → PC1
+
+# IP Addressing
+
+Router0 G0/0192.168.1.1/24
+
+Router0 G0/1 10.0.0.1/30
+
+Router1 G0/010.0.0.2/30
+
+Router1 G0/1192.168.2.1/24
+
+PC0 NIC 192.168.1.2/24
+
+PC1 NIC 192.168.2.2/24
+
+## RIP Configuration
+
+# Router 0
+
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 10.0.0.0
+network 192.168.1.0
+end
+copy running-config startup-config
+
+# Router 1
+
+enable
+configure terminal
+router rip
+version 2
+no auto-summary
+network 10.0.0.0
+network 192.168.2.0
+end
+copy running-config startup-config
+
+# VERIFICATION
+
+commands used:
+show ip protocols
+show ip route
+ping 10.0.0.2
+ping 10.0.0.1
+ping 192.168.2.2
+
+# RESULTS 
+
+Successfully configured RIP version 2
+
+Verified Routers, exchanged routes dynamically 
+
+Confirmed both routers Learned remote networks through RIP 
+
+
+Successfully established end-to-end communication between pc0 and pc1 
+
+# Challenges Faced
+
+Initial router-to-router connection was
+  incorrect.
+
+Corrected the physical connection by
+connecting *Router0 G0/1* to *Router1 G0/0*.
+
+Verified connectivity before RIP
+exchanged routing information.
+
+Resolved the issue and achieved
+successful communication across both
+  LANs.
+
+
+# Skills Gained
+
+Dynamic Routing (RIP v2)
+
+  Router configuration
+
+  IP addressing and subnetting
+
+  Route verification using `show ip route`
+
+  Network troubleshooting
+
+  End-to-end connectivity
+
+  # Status ✅
